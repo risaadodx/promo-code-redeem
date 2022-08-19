@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Get Discount</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body class="bg-neutral-100">
+    <div class="w-1/2 mx-auto mt-20 drop-shadow-xl ">
+        <div class="grid grid-cols-2 ">
+            <div class=" bg-white p-6 rounded-l-md">
+                <h1 class="text-2xl font-bold">Redeem Promo</h1>
+                <div class="flex mt-20">
+                    <input id="apply-field" class="focus:outline-none py-1 px-3 bg-gray-100" type="text" placeholder="Enter Promo Code">
+                    <button id="apply-btn" class="bg-red-600 hover:bg-black text-white px-10 py-1 rounded-r-md">Apply</button>
+                </div>
+                <div  class=" mt-20 ">
+                    <button  class="bg-violet-600 hover:bg-black text-white px-8 py-2 rounded ">Pay Now $<span id="pay-btn-amount">1450</span></button>
+                    <p class="text-xs mt-5">By clicking 'Pay Now' you are agree to <span class="text-blue-600">Privacy Policy</span> and <span class="text-blue-600">Terms of Services</span>.</p>
+                </div>
+            </div>
+            <div class="bg-gray-100 p-6 rounded-r-md  ">
+                    <h1 class="text-2xl font-bold text-center mt-20">Discount you get:</h1>
+
+                    <h1 class="text-center mt-5 text-7xl text-red-600 font-bold"><span id="discount-percent">00</span>%
+                    </h1>
+                    <p id="another-code" class="text-center text-xs  mt-10 underline decoration-black  " href=""><a href="">*Apply another code</a></p>
+            </div>
+        </div>
+    </div>
+    <script src="js/discount.js"></script>
+</body>
+</html>
